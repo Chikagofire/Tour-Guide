@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(214, 212, 212);
+}
+.icons {
+  padding-right: 50px;
+}
+.icons img {
+  width: 20px;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+}
+.menu {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.el-menu {
+  padding-left: 30px;
+  color: rgb(48, 46, 46);
+}
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.fire1 {
+  height: 550px;
+  width: 40%;
+}
+.fire2 {
+  height: 400px;
+  width: 40%;
+}
+.fire3 {
+  width: 25%;
+}
+
+.inform-one,
+.inform-two,
+.inform-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(214, 212, 212);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.gallery img {
+  height: 250px;
+}
+
+.photos{
+    position: relative;
+}
+
+.photos:hover .arrowLeft{
+    opacity: 100%;
+}
+
+.photos:hover .arrowRight{
+    opacity: 100%;
+}
+
+.arrowLeft{
+    width: 50px;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 25px;
+    opacity: 0;
+    transition-property: visibility;
+    transition: 1s;
+}
+
+.arrowRight{
+    width: 50px;
+    right: 25px;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.info-for-img{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: white;
+}
+
+.title {
+  margin: 30px 0 30px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.name {
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.features {
+  margin: 40px;
+  display: grid;
+  grid-template-areas:
+    ". title ."
+    "one two three"
+    "four five six";
+}
+.title {
+  grid-area: title;
+}
+.title-feat {
+  text-align: center;
+}
+.elem-one {
+  grid-area: one;
+  border-bottom: 1px solid rgb(214, 212, 212);
+  border-right: 1px solid rgb(214, 212, 212);
+}
+.elem-two {
+  grid-area: two;
+  border-bottom: 1px solid rgb(214, 212, 212);
+  border-right: 1px solid rgb(214, 212, 212);
+}
+.elem-three {
+  grid-area: three;
+  border-bottom: 1px solid rgb(214, 212, 212);
+}
+.elem-four {
+  grid-area: four;
+  border-right: 1px solid rgb(214, 212, 212);
+}
+
+.elem-five {
+  grid-area: five;
+  border-right: 1px solid rgb(214, 212, 212);
+}
+.elem-six {
+  grid-area: six;
+}
+.info1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px 0px 50px;
+}
+.sub-title {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.title-road {
+  font-size: 28px;
+}
+button {
+  background-color: white;
+  width: 60px;
+  padding: 5px;
+  color: rgb(202, 198, 198);
+  border-radius: 3px;
+  border: 1px solid rgb(202, 198, 198);
+}
+
+.label1 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 30px;
+}
+
+.write {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.forms {
+  flex-direction: column;
+  width: 850px;
+  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.datas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.datas .input:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts .text-form {
+  margin-right: 15px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  height: 25px;
+  width: 250px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 20px;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 25px 0;
+}
+
+#story {
+  height: 30px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 4px;
+}
+
+.text-form {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  height: 120px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 4px;
+}
+
+.form-sends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(214, 212, 212);
+}
+.circ {
+  border-radius: 50%;
+  border: 1px solid rgb(90, 88, 88);
+}
+.icons1 {
+  flex-direction: column;
+  padding-top: 20px;
+}
+.icons1 img {
+  width: 30px;
+  padding: 10px;
+}
